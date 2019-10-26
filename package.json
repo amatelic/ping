@@ -1,10 +1,13 @@
 {
   "name": "ping",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Module for pinging websites and extracting header data",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "ping": "./index.js"
   },
   "keywords": ["http", "crawling"],
   "author": "Anze Matelic <amatelic93@gmail.com>",

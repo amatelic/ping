@@ -1,6 +1,6 @@
 {
   "name": "ping",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Module for pinging websites and extracting header data",
   "main": "index.js",
   "scripts": {

@@ -20,7 +20,10 @@ ping('http://gdo-studio.si')
     .then(err => consoel.log(err));
 ```
 
-### Important 
+### Important(should be fixed problem stream)
 
 Module was tested with 12.13.0 version only
+
+### Tracking handshakes
+    - [Measuring http timing node js]https://blog.risingstack.com/measuring-http-timings-node-js/
 

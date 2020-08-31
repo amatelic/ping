@@ -10,6 +10,6 @@
     "ping": "./index.js"
   },
   "keywords": ["http", "crawling"],
-  "author": "Anze Matelic <amatelic93@gmail.com>",
+  "author": "Anze Matelic <anze.matelic@gdo-studio.si>",
   "license": "ISC"
 }

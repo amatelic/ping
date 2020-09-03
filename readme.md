@@ -1,18 +1,17 @@
 # Ping
 
-
 Basic module for retriving basic headers from websites.
-Right now support usage as module and as pipe.
+Right now support usage as module and as linux pipe.
 
-// Example of usage with unix pipes
+## Example of usage with unix pipes
 
-```
+```sh
 echo "http://gdo-studio.si" | ./index.js | jq
 ```
 
-// Example with module supports (Buffer|String|Stream)
+## Example with module supports (Buffer|String|Stream)
 
-```
+```js
 const { ping } = require('ping');
 
 ping('http://gdo-studio.si')
@@ -20,26 +19,38 @@ ping('http://gdo-studio.si')
     .then(err => consoel.log(err));
 ```
 
-### Important(should be fixed problem stream)
-
-Module was tested with 12.13.0 version only
-
-### Basic module for  retriving more information related 
-
-|DNS Lookup| -> | |TCP Connection| - | TLS Handshake| | -> | Time to First Byte| -> | Content Byte | 
 
 
-Connection established 
+##  Basic connection steps for http/https connection:
 
-    - TCP Connection
-    - TLS Handshake
+### Whole client to server interaction:
+
+-   DNS Lookup
+-   TCP Connection
+-   TLS Handshake
+-   Time to First Byte
+-   Content Byte 
 
 
-Request and Response 
-    - Time to First Byte
-    - Content Transfer
+### Connection established part: 
+
+- DNS Lookup
+- TCP Connection
+- TLS Handshake
+
+
+### Request and Response:
+
+- Time to First Byte
+- Content Transfer
     
 
-### Tracking handshakes
-    - [Measuring http timing node js]https://blog.risingstack.com/measuring-http-timings-node-js/
+## Tracking handshakes
+
+- [Measuring http timing node js]https://blog.risingstack.com/measuring-http-timings-node-js/
+
+
+## Notes
+
+Module was tested with 12.13.0 version only
 
